@@ -1,0 +1,139 @@
+* {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+}
+#content3 {
+  /* outline: 3px solid black; */
+
+  position: relative;
+  top: -75px;
+}
+
+#content3title {
+  display: flex;
+  justify-content: center;
+  font-size: 3vw;
+  font-weight: 900;
+  margin-top: 50px;
+}
+
+#content3text {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 1vw;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+#content3list {
+  /* outline: 2px solid; */
+
+  list-style: none;
+  margin-left: 5%;
+  margin-right: 5%;
+  overflow: hidden;
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#content3list li {
+  display: flex;
+  position: relative;
+  float: left;
+  justify-content: space-evenly;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 0;
+}
+
+#iconlist div {
+  display: flex;
+  flex-direction: column; /* This makes sure content is arranged in a column */
+  align-items: center;
+  text-align: center;
+  margin-top: 5px; /* Adjust as needed */
+}
+
+#iconlist a {
+  display: flex;
+  flex-direction: column; /* Ensure anchor tags also follow column direction */
+  align-items: center;
+}
+
+#iconlist {
+  list-style: none;
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+  padding: 0;
+  margin-top: 100px;
+}
+
+#iconlist li {
+  display: flex;
+}
+
+#icon1 {
+  margin: 0 5% 0 0;
+}
+#icon2 {
+  margin: 0 5% 0 5%;
+}
+#icon3 {
+  margin: 0 5% 0 5%;
+}
+#icon4 {
+  margin: 0 0 0 5%;
+}
+
+[id*="icon"] img {
+  width: 5vw;
+  height: 5vw;
+  float: left;
+}
+
+#iconlist button{
+  border: none;
+}
+
+@media only screen and (max-width: 786px) {
+  #iconlist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    background-color: rgb(32, 32, 32);
+    transition: max-height 0.3s ease-in-out;
+    max-height: 0;
+    margin-bottom: 250px;
+    z-index: 4;
+    flex-direction: column; /* 세로로 정렬 */
+    top: 150px;
+  }
+
+  #iconlist ul {
+    list-style: none;
+    display: flex;
+    align-items: center; /* 가운데 정렬 */
+    justify-content: center; /* 세로로 가운데 정렬 */
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  #iconlist li {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* li 내부 요소를 가로로 중앙 정렬 */
+    align-items: center; /* li 내부 요소를 세로로 중앙 정렬 */
+    padding: 10px 0; /* 간격을 위한 패딩 추가 */
+    color: white;
+  }
+
+  #iconlist li:last-child {
+    border-bottom: none; /* 마지막 li 요소의 경계선 제거 */
+  }
+}

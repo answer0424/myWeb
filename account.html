@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>signup</title>
+    <link rel="stylesheet" href="./account.css" />
+    <link rel="stylesheet" href="./header.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nanum+Pen+Script&family=Noto+Sans+KR&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="header">
+      <div id="logo">
+        <a href="./index.html"><img src="./image/logo.png" alt="" /></a>
+      </div>
+      <div id="menu-icon">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+
+      <!-- 메뉴 아이콘 추가 -->
+      <div id="navbar" class="col-6">
+        <div id="nav1"><a href="./about.html">ABOUT</a></div>
+        <div id="nav2"><a href="./course.html">COURSE</a></div>
+        <div id="nav3"><a href="./car.html">CAR</a></div>
+        <div id="nav4"><a href="./account.html">ACCOUNT</a></div>
+      </div>
+    </div>
+    <p class="blank"></p>
+    <div class="cont">
+      <form
+        id="loginForm1"
+        action="https://www.w3schools.com/action_page.php"
+        method="POST"
+      >
+        <div class="form sign-in">
+          <h2>Welcome back,</h2>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            <span>Password</span>
+            <input type="password" name="password" required />
+          </label>
+          <p class="forgot-pass">Forgot password?</p>
+          <button id="submit1" type="submit" class="submit">Sign In</button>
+        </div>
+      </form>
+
+      <div class="sub-cont">
+        <div class="img">
+          <div class="img__text m--up">
+            <h2>Sign up here?</h2>
+            <p>Sign up and discover great amount of new drive course!</p>
+          </div>
+          <div class="img__text m--in">
+            <h2>One of us?</h2>
+            <p>
+              If you already has an account, just sign in. We've missed you!
+            </p>
+          </div>
+          <div class="img__btn">
+            <span class="m--up">Sign Up</span>
+            <span class="m--in">Sign In</span>
+          </div>
+        </div>
+        <form
+          id="loginForm2"
+          action="https://www.w3schools.com/action_page.php"
+          method="POST"
+        >
+          <div class="form sign-up">
+            <h2>Time to feel like home,</h2>
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" required />
+            </label>
+            <label>
+              <span>Password</span>
+              <input type="password" name="password" required />
+            </label>
+            <button id="submit2" type="submit" class="submit">Sign Up</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="./account.js"></script>
+  </body>
+</html>

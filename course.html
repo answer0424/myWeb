@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>course</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=e721bd7c2aa61e50826199c9f15d7c7d"
+    ></script>
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./course.css" />
+    <link rel="stylesheet" href="./courseModal.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./courseText.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nanum+Pen+Script&family=Noto+Sans+KR&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- header -->
+    <div id="header">
+      <div id="logo">
+        <a href="./index.html"><img src="./image/logo.png" alt="" /></a>
+      </div>
+      <div id="menu-icon">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      
+      <!-- 메뉴 아이콘 추가 -->
+      <div id="navbar" class="col-6">
+        <div id="nav1"><a href="./about.html">ABOUT</a></div>
+        <div id="nav2"><a href="./course.html">COURSE</a></div>
+        <div id="nav3"><a href="./car.html">CAR</a></div>
+        <div id="nav4"><a href="./account.html">ACCOUNT</a></div>
+      </div>
+    </div>
+    
+    <!-- maintext -->
+    <div id="text">
+      <div id="maintext">Waht A Cool Course!</div>
+      <div id="description">
+        Find the best routes to experience the ultimate freedom through our
+        website.
+      </div>
+    </div>
+    <div id="row">
+      <div id="row1" class="col-10">
+        <div id="course1" class="col-3" onclick="openModal('info1')">서울 도심 드라이브</div>
+        <div id="course2" class="col-3" onclick="openModal('info2')">미사 한강공원 ~ 남한강</div>
+        <div id="course3" class="col-3" onclick="openModal('info3')">인천 영종대교</div>
+      </div>
+      <div class="clear"></div>
+      <div id="row2" class="col-10">
+        <div id="course4" class="col-3" onclick="openModal('info4')">제주 서해안 도로</div>
+        <div id="course5" class="col-3" onclick="openModal('info5')">강릉 해안 도로</div>
+        <div id="course6" class="col-3" onclick="openModal('info6')">속초 청초호 ~ 영랑호</div>
+      </div>
+      <div class="clear"></div>
+      <div id="row3" class="col-10">
+        <div id="course7" class="col-3" onclick="openModal('info7')">대구 동인청사 ~ 오도산</div>
+        <div id="course8" class="col-3" onclick="openModal('info8')">경기 광주 새오개길</div>
+        <div id="course9" class="col-3" onclick="openModal('info9')">부안 변산반도</div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal" style="height: 100%;">
+      <div class="modal-content" style="height: auto;">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div id="modal-info"></div>
+      </div>
+    </div>
+    <!-- footer -->
+    <div id="footer">
+      <div id="footerimg">
+        <a href="./index.html"><img src="./image/logo.png" alt="" /></a>
+      </div>
+      <ul id="footernav">
+        <a href="./about.html"><li>ABOUT</li></a>
+        <a href="./course.html"><li>COURSE</li></a>
+        <a href="./car.html"><li>CAR</li></a>
+        <a href="./account.html"><li>SIGN UP</li></a>
+      </ul>
+      <ul id="footersns">
+        <a href=""><li>Facebook</li></a>
+        <a href=""><li>Instagram</li></a>
+        <a href=""><li>Youtube</li></a>
+      </ul>
+      <ul id="footercop">
+        <li>© 2024 by car lovers.</li>
+        <li>powered and secured by lee</li>
+      </ul>
+    </div>
+    <div id="subButton">
+      <div id="goUpButton" onclick="scrollToTop()"><span>Go Up</span></div>
+      <div id="chat"><button id="chat">let's chat</button></div>
+    </div>
+    <script src="./courseData.js"></script>
+    <script src="./course.js"></script>
+    <script src="header.js"></script>
+  </body>
+</html>

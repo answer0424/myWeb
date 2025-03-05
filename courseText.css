@@ -1,0 +1,21 @@
+*{
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+}
+#maintext {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 3vw;
+    margin-top: 50px;
+    
+  }
+  
+  #description{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 1vw;
+    margin-top: 20px;
+    margin-bottom: 10vh;
+  }

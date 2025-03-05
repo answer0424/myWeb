@@ -1,0 +1,54 @@
+* {
+  font-family: "Oswald", "Do hyeon", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#content1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto; /* height를 auto로 설정하여 이미지 크기 조절 */
+}
+
+#content1 img {
+  width: 100%;
+  height: auto; /* 높이 값을 auto로 설정하여 비율에 맞게 조절 */
+}
+
+#welcome,
+#description {
+  position: absolute;
+  color: white;
+  text-align: center;
+}
+
+#welcome {
+  top: 20%;
+  font-size: 6vw;
+}
+
+#description {
+  top: 40%;
+  width: 80%;
+  font-size: 1vw;
+}
+
+#youtube {
+  position: relative;
+  top: 50px;
+  display: inline-block;
+  height: 100px; 
+}
+
+#youtube a {
+  text-decoration: none;
+  background-color: white;
+  padding: 1.5vw;
+  color: black;
+  display: inline-block;
+}

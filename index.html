@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>myweb</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="./header.css" />
+    <link rel="stylesheet" href="./indexContent1.css" />
+    <link rel="stylesheet" href="./indexContent2.css" />
+    <link rel="stylesheet" href="./indexContent3.css" />
+    <link rel="stylesheet" href="./footer.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nanum+Pen+Script&family=Noto+Sans+KR&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nanum+Pen+Script&family=Noto+Sans+KR&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <div id="header">
+      <div id="logo">
+        <a href="./index.html"><img src="./image/logo.png" alt="" /></a>
+      </div>
+      <div id="menu-icon">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+
+      <!-- 메뉴 아이콘 추가 -->
+      <div id="navbar" class="col-6">
+        <div id="nav1"><a href="./about.html">ABOUT</a></div>
+        <div id="nav2"><a href="./course.html">COURSE</a></div>
+        <div id="nav3"><a href="./car.html">CAR</a></div>
+        <div id="nav4"><a href="./account.html">ACCOUNT</a></div>
+      </div>
+    </div>
+
+    <!-- content1 -->
+    <div id="content1" class="col-12">
+      <img
+        src="https://images.pexels.com/photos/842711/pexels-photo-842711.jpeg"
+        alt="mainImage"
+        class="col-12"
+      />
+      <div id="welcome">Welcome to my web</div>
+      <div id="description">
+        <p>
+          Our website recommends cars and suggests drive routes for a refreshing
+          change of pace. <br />
+          Create posts to connect with others and gather the information you
+          want.
+        </p>
+        <div id="youtube">
+          <a
+            href="https://www.youtube.com/results?search_query=%EC%9E%90%EB%8F%99%EC%B0%A8+%EC%B6%94%EC%B2%9C"
+            >RECOMMEND</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- content2 -->
+    <div id="content2" class="col-8">
+      <div id="content2img" class="col-2"></div>
+      <div id="content2menu">
+        <ul id="content2nav" class="col-6">
+          RECOMMEND
+          <li>
+            서울 추천 코스
+            <button id="content2button1" class="col-3">
+              <a href="./course.html">details</a>
+            </button>
+          </li>
+          <li>
+            제주도 추천 코스
+            <button id="content2button2" class="col-3">
+              <a href="./course.html">details</a>
+            </button>
+          </li>
+          <li>
+            강원도 추천 코스
+            <button id="content2button3" class="col-3">
+              <a href="./course.html">details</a>
+            </button>
+          </li>
+          <li>
+            해안 도로 추천 코스
+            <button id="content2button4" class="col-3">
+              <a href="./course.html">details</a>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- content3 -->
+    <div id="content3">
+      <div id="content3title">Recommend Your Style Car</div>
+      <div id="content3text">
+        Discover the perfect car that suits your needs. <br />
+        New adventures and countless joys are just around the corner,<br />
+        waiting for you to explore. <br />
+        Start your journey now and experience the thrill of the open road.
+      </div>
+      <div id="iconlist">
+        <div>
+          <div>중형차</div>
+          <button onclick="moveToScroll('mediumCar')">
+            <img src="./image/icon1.png" alt="" />
+          </button>
+        </div>
+        <div>
+          <div>대형차</div>
+          <button onclick="moveToScroll('largeCar')">
+            <img src="./image/icon2.png" alt="" />
+          </button>
+        </div>
+        <div>
+          <div>전기차</div>
+          <button onclick="moveToScroll('electricCar')">
+            <img src="./image/icon3.png" alt="" />
+          </button>
+        </div>
+        <div>
+          <div>스포츠</div>
+          <button onclick="moveToScroll('sportsCar')">
+            <img src="./image/icon4.png" alt="" />
+          </button>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+
+    <!-- footer -->
+    <div id="footer">
+      <div id="footerimg">
+        <a href="./index.html"><img src="./image/logo.png" alt="" /></a>
+      </div>
+      <ul id="footernav">
+        <a href="./about.html"><li>ABOUT</li></a>
+        <a href="./course.html"><li>COURSE</li></a>
+        <a href="./car.html"><li>CAR</li></a>
+        <a href="./account.html"><li>SIGN UP</li></a>
+      </ul>
+      <ul id="footersns">
+        <a href=""><li>Facebook</li></a>
+        <a href=""><li>Instagram</li></a>
+        <a href=""><li>Youtube</li></a>
+      </ul>
+      <ul id="footercop">
+        <li>© 2024 by car lovers.</li>
+        <li>powered and secured by lee</li>
+      </ul>
+    </div>
+    <div id="subButton">
+      <div id="goUpButton" onclick="scrollToTop()"><span>Go Up</span></div>
+      <div id="chat"><button id="chat">let's chat</button></div>
+    </div>
+    <script src="./header.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

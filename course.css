@@ -1,0 +1,245 @@
+*{
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+}
+#row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 200px;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+#row1, #row2, #row3 {
+  display: flex;
+  justify-content: center; /* 가운데 정렬 */
+  width: 100%;
+  height: 30vh; /* 높이를 줄임 */
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+
+#row1 > div, #row2 > div, #row3 > div {
+  width: 30%; /* 각 칸의 너비를 줄임 */
+  height: 100%; /* 칸의 높이는 부모 요소에 맞춤 */
+  background-color: #f0f0f0; /* 각 칸의 배경색 (선택 사항) */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin: 20px; /* 각 칸 사이의 간격 */
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+  cursor: pointer;
+}
+
+/* 반응형 웹 설정 */
+@media (max-width: 786px) {
+  #row1, #row2, #row3 {
+    flex-direction: column;
+    height: 600px;
+  }
+  
+  #row1 > div, #row2 > div, #row3 > div {
+    width: 90%;
+    margin: 10px auto; /* 가운데 정렬을 위해 auto 사용 */
+  }
+}
+
+
+#course1 {
+  background:url(https://th.bing.com/th/id/OIP.fQil7uIRagh3qTMOfN7sZQHaFS?w=259&h=185&c=7&r=0&o=5&dpr=1.3&pid=1.7) ;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-weight: 900;
+  font-size: 2vw;
+}
+#course2 {
+  background:url(https://th.bing.com/th/id/OIP.AtHzJnsTEUQsdraxHJ8MGgHaFT?w=259&h=185&c=7&r=0&o=5&dpr=1.5&pid=1.7) ;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  color: black;
+  font-weight: 900;
+  font-size: 2vw;
+}
+#course3 {
+  background:url(https://ojsfile.ohmynews.com/BIG_IMG_FILE/2022/1222/IE003093267_BIG.jpg) ;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-weight: 900;
+  font-size: 2vw;
+}
+#course4 {
+  background:url(https://th.bing.com/th/id/OIP.doRV3I7Br_PusvbG8HBKuQHaE7?w=290&h=193&c=7&r=0&o=5&dpr=1.5&pid=1.7) ;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  color: black;
+  font-weight: 900;
+  font-size: 2vw;
+}
+#course5 {
+  background:url(https://th.bing.com/th/id/OIP.SPvrC83-p3VncHsaygO6pwHaE3?w=264&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7) ;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-weight: 900;
+  font-size: 2vw;
+}
+#course6 {
+  background:url(https://mediaim.expedia.com/destination/1/3a5601a5807bcb397bab59d2e6ad28a8.jpg) ;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  color: black;
+  font-weight: 900;
+  font-size: 2vw;
+}
+#course7 {
+  background:url(https://th.bing.com/th/id/OIP.PSY7r1RQF2IH2x9ay0QVzQHaE7?w=284&h=189&c=7&r=0&o=5&dpr=1.5&pid=1.7) ;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-weight: 900;
+  font-size: 2vw;
+}
+#course8 {
+  background:url(https://blog.kakaocdn.net/dn/dJglOU/btsEPJsf9pF/ogqsb9Mc7rcxKvsc0nBWwK/img.jpg) ;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  color: black;
+  font-weight: 900;
+  font-size: 2vw;
+}
+#course9 {
+  background:url(https://th.bing.com/th/id/OIP.yUoY4mN2ENyFD-yTKE7VwAHaE8?w=235&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7) ;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-weight: 900;
+  font-size: 2vw;
+}
+
+.col-3 {
+  margin-bottom: 40px;
+  text-align: center; /* 텍스트 가운데 정렬 */
+  outline: 1px solid #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

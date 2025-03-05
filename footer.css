@@ -1,0 +1,70 @@
+*{
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+}
+#footer {
+    background-color: rgb(32, 32, 32);
+    color: #fff;
+    height: 23vw;
+    padding: 2vw;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  #footerimg img{
+    position:absolute;
+    left: 10px;
+    width: 20%;
+  }
+  
+  #footernav{
+      display: flex;
+      flex-direction: column;
+      justify-content: center; 
+      height: auto; 
+      margin-right: 4vw;
+      float: right;
+      font-size: 1vw;
+      margin-top: 2vw;
+  }
+  
+  #footernav li{
+    list-style: none;
+    line-height: 4vw;
+  }
+  
+  #footersns{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    float: right;
+    font-size: 1vw;
+    margin-top: 2.5vw;
+  }
+  
+  
+  #footersns li{
+    list-style: none;
+    line-height: 4vw;
+  }
+  
+  #footercop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    float: right;
+    margin-top: 5vw;
+    font-size: 1vw;
+  }
+  
+  #footercop li{
+    list-style: none;
+    
+  }
+  
+  #footer a{
+    text-decoration: none;
+    color: white;
+  }
+  
